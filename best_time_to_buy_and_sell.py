@@ -8,5 +8,5 @@ def max_profit(prices):
     return max_profit
 
 
-preco = [7,6,4,3,1]
+preco = [7,1,5,3,6,4]
 print(max_profit(preco))
