@@ -5,6 +5,7 @@ class ListNode:
 
 
 class Solution:
+    @staticmethod
     def delete_duplicates(self, head: ListNode) -> ListNode:
         init = head
         prev = None
