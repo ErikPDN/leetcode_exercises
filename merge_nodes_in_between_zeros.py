@@ -49,3 +49,4 @@ if __name__ == '__main__':
     # Imprimindo a nova lista
     print("Lista resultante após mergeNodes:")
     print_list(new_head)
+
