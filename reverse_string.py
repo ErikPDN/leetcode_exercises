@@ -6,6 +6,7 @@ def reverse_string(s):
         left += 1
         right -= 1
 
+    return s
 
 string = ['h', 'e', 'l', 'l', 'o']
 print(reverse_string(string))
