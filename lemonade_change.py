@@ -1,25 +1,23 @@
 def lemonade_change(bills):
-    balance = {5: 0, 10: 0, 20: 0}
+    change = {5: 0, 10: 0, 20: 0}
+
     for bill in bills:
-        if bill == 10:
-            if balance[5] >= 1:
-                balance[5] -= 1
+        if bill == 5:
+            change[bill] += 1
+        elif bill == 10:
+            change[bill] += 1
+            if change[5] > 0:
+                change[5] -= 1
             else:
                 return False
-            balance[bill] += 1
-
-        elif bill == 20:
-            if balance[10] >= 1 and balance[5] >= 1:
-                balance[10] -= 1
-                balance[5] -= 1
-            elif balance[5] >= 3:
-                balance[5] -= 3
-            else:
-                return False
-            balance[bill] += 1
-
         else:
-            balance[5] += 1
+            if change[10] > 0 and change[5] > 0:
+                change[10] -= 1
+                change[5] -= 1
+            elif change[5] > 2:
+                change[5] -= 3
+            else:
+                return False
 
     return True
 
