@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "leetcode_exercises_daeb3769"
+        },
+        {
+            "type": "java",
             "name": "CountNumbersOfTeams",
             "request": "launch",
             "mainClass": "CountNumbersOfTeams",
