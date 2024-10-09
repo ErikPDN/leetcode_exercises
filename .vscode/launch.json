@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinNumbersSwapsToMakeTheStrBalanced",
+            "request": "launch",
+            "mainClass": "MinNumbersSwapsToMakeTheStrBalanced",
+            "projectName": "leetcode_exercises_daeb3769"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
